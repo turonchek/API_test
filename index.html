@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Task 32</title>
+</head>
+<body>
+    <div class="container">
+        <main class="main">
+            <div class="header-wrap">
+                <p class="plain-text">MSI 2020</p>
+                <h1 class="main-header">Hey!</h1>
+                <h2 class="second-header">Let’s try to find a joke for you:</h2>
+            </div>
+            <form id="formJoke" class="form-joke">
+                <label for="randomCategory" class="category-label label-text">
+                    <input class="type" type="radio" value="random" name="jokeCategory" id="randomCategory" checked>
+                    Random
+                </label>
+                <label for="" class="category-label label-text">
+                    <input class="type" type="radio" value="categories" name="jokeCategory" id="categoriesCategory">
+                    From categories
+                </label>
+                <ul id="categoriesList" class="categories-list"></ul>
+                <label for="categoriesSearch" class="category-label label-text category-label--alt">
+                    <input class="type" type="radio" value="search" name="jokeCategory" id="categoriesSearch">
+                    Search
+                </label>
+                <input type="text" id="searchJoke" class="search" placeholder="Free text search...">
+                <button class="submit-btn">Get a joke</button>
+            </form>
+            <div id="jokeContainer" class="joke-container"></div>
+    </main>
+        <aside class="favorite">
+            <h3 class="fav-header">Favourite</h3>
+            <div class="joke-favor" id="jokesFav"></div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+    
+</body> 
+</html>
